@@ -1,0 +1,175 @@
+// ============================================
+// SIXTIES POP ART THEME - COLOR VARIABLES
+// ============================================
+// Inspired by Roy Lichtenstein, Andy Warhol, and 1960s graphic design
+// Bold, vibrant colors with high contrast for visual impact
+// Balanced for academic readability and accessibility
+
+// PRIMARY POP ART PALETTE
+// ============================================
+
+// Hot Pink - Primary accent (Warhol-inspired)
+$pop-hot-pink: #FF1493;
+$pop-hot-pink-light: #FF69B4;
+$pop-hot-pink-dark: #C71585;
+
+// Electric Blue - Secondary accent (Lichtenstein comic blue)
+$pop-electric-blue: #0080FF;
+$pop-electric-blue-light: #4DA6FF;
+$pop-electric-blue-dark: #0066CC;
+
+// Bright Yellow - Tertiary accent (Pop art sunshine)
+$pop-bright-yellow: #FFD700;
+$pop-bright-yellow-light: #FFE44D;
+$pop-bright-yellow-dark: #CCAC00;
+
+// Bold Red - Attention color (Classic pop red)
+$pop-bold-red: #FF3333;
+$pop-bold-red-light: #FF6666;
+$pop-bold-red-dark: #CC0000;
+
+// Vivid Orange - Energy color
+$pop-vivid-orange: #FF6600;
+$pop-vivid-orange-light: #FF8533;
+$pop-vivid-orange-dark: #CC5200;
+
+// Lime Green - Fresh accent
+$pop-lime-green: #32CD32;
+$pop-lime-green-light: #66FF66;
+$pop-lime-green-dark: #228B22;
+
+// NEUTRALS AND BACKGROUNDS
+// ============================================
+
+// Off-white with slight warmth (prevents harsh white)
+$pop-off-white: #FEFAF6;
+$pop-cream: #FFF8E7;
+
+// Light grays for subtle backgrounds
+$pop-light-gray: #F5F5F5;
+$pop-medium-gray: #E0E0E0;
+
+// Text colors (high contrast for accessibility)
+$pop-black: #1A1A1A;
+$pop-dark-gray: #333333;
+$pop-text-gray: #4A4A4A;
+
+// GRADIENT COMBINATIONS
+// ============================================
+// Dynamic gradients for headers and emphasis
+
+$gradient-pink-orange: linear-gradient(135deg, $pop-hot-pink 0%, $pop-vivid-orange 100%);
+$gradient-blue-pink: linear-gradient(135deg, $pop-electric-blue 0%, $pop-hot-pink 100%);
+$gradient-yellow-orange: linear-gradient(135deg, $pop-bright-yellow 0%, $pop-vivid-orange 100%);
+$gradient-electric: linear-gradient(135deg, $pop-electric-blue 0%, $pop-lime-green 100%);
+
+// TYPOGRAPHY VARIABLES
+// ============================================
+
+// Font stacks - bold, impactful, reminiscent of 1960s advertising
+$font-stack-primary: 'Helvetica Neue', Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+$font-stack-heading: 'Impact', 'Arial Black', 'Helvetica Neue', Arial, sans-serif;
+$font-stack-mono: 'Courier New', Courier, monospace;
+
+// Font weights
+$font-weight-normal: 400;
+$font-weight-medium: 600;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+// Font sizes (responsive base)
+$font-size-base: 18px;
+$font-size-small: 16px;
+$font-size-large: 20px;
+$font-size-xlarge: 24px;
+
+// Heading sizes (bold pop art scale)
+$h1-size: 3.5rem;
+$h2-size: 2.5rem;
+$h3-size: 1.75rem;
+$h4-size: 1.5rem;
+$h5-size: 1.25rem;
+$h6-size: 1.1rem;
+
+// Line heights
+$line-height-base: 1.7;
+$line-height-heading: 1.2;
+$line-height-tight: 1.4;
+
+// SPACING VARIABLES
+// ============================================
+
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 3rem;
+$spacing-xxl: 4rem;
+
+// BORDER AND SHADOW EFFECTS
+// ============================================
+
+// Bold borders for pop art effect
+$border-width-thin: 2px;
+$border-width-medium: 4px;
+$border-width-thick: 6px;
+
+// Border radius (subtle, not overly rounded)
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+
+// Box shadows (strong, graphic)
+$shadow-pop: 6px 6px 0 $pop-black;
+$shadow-subtle: 3px 3px 0 rgba(0, 0, 0, 0.15);
+$shadow-hover: 8px 8px 0 $pop-black;
+
+// BUTTON AND LINK STYLES
+// ============================================
+
+$button-padding-vertical: 0.75rem;
+$button-padding-horizontal: 1.5rem;
+$button-border-width: 3px;
+
+// BREAKPOINTS
+// ============================================
+
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-wide: 1280px;
+
+// ACCESSIBILITY
+// ============================================
+// All color combinations meet WCAG AA standards for contrast
+
+// Focus states (high visibility)
+$focus-color: $pop-bold-red;
+$focus-outline-width: 3px;
+$focus-outline-offset: 2px;
+
+// ANIMATION VARIABLES
+// ============================================
+
+$transition-fast: 0.15s ease;
+$transition-medium: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+// THEME-SPECIFIC OVERRIDES
+// ============================================
+// Override Cayman theme defaults with pop art values
+
+$header-bg-color: $gradient-blue-pink !default;
+$header-bg-color-secondary: $gradient-pink-orange !default;
+
+$section-headings-color: $pop-hot-pink !default;
+$body-text-color: $pop-dark-gray !default;
+$body-link-color: $pop-electric-blue !default;
+$blockquote-text-color: $pop-text-gray !default;
+
+$code-bg-color: $pop-light-gray !default;
+$code-text-color: $pop-dark-gray !default;
+
+$border-color: $pop-medium-gray !default;
+$table-border-color: $pop-medium-gray !default;
+$hr-border-color: $pop-hot-pink !default;

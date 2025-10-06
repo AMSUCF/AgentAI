@@ -1,0 +1,648 @@
+// ============================================
+// SIXTIES POP ART SUBTHEME
+// ============================================
+// Custom theme extending jekyll-theme-cayman
+// Design inspiration: 1960s pop art (Lichtenstein, Warhol)
+// Purpose: Academic AI workshop with visual energy
+// Balance: Professional credibility + creative engagement
+
+@import 'variables';
+
+// ============================================
+// GLOBAL RESETS AND BASE STYLES
+// ============================================
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $font-stack-primary;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $pop-dark-gray;
+  background-color: $pop-off-white;
+}
+
+// ============================================
+// HEADER - BOLD POP ART GRADIENT
+// ============================================
+
+.page-header {
+  color: #FFFFFF;
+  text-align: center;
+  background: $gradient-blue-pink;
+  padding: $spacing-xxl $spacing-md;
+  position: relative;
+  overflow: hidden;
+
+  // Subtle dot pattern overlay (Ben-Day dots reference)
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 8px 8px;
+    pointer-events: none;
+  }
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    padding: $spacing-xxl * 1.5 $spacing-xl;
+  }
+}
+
+.project-name {
+  margin-top: 0;
+  margin-bottom: $spacing-md;
+  font-family: $font-stack-heading;
+  font-size: 2.5rem;
+  font-weight: $font-weight-black;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: $h1-size;
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    font-size: 4rem;
+  }
+}
+
+.project-tagline {
+  margin-bottom: $spacing-lg;
+  font-weight: $font-weight-medium;
+  font-size: 1.1rem;
+  opacity: 0.95;
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 1.25rem;
+  }
+}
+
+// ============================================
+// MAIN CONTENT AREA
+// ============================================
+
+.main-content {
+  max-width: 64rem;
+  padding: $spacing-xl $spacing-md;
+  margin: 0 auto;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  word-wrap: break-word;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    padding: $spacing-xxl $spacing-xl;
+    font-size: $font-size-large;
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    padding: $spacing-xxl * 1.5 $spacing-xxl;
+  }
+}
+
+// ============================================
+// TYPOGRAPHY - BOLD AND IMPACTFUL
+// ============================================
+
+.main-content {
+
+  // Headings with pop art color blocking
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $font-stack-heading;
+    margin-top: $spacing-xl;
+    margin-bottom: $spacing-md;
+    font-weight: $font-weight-black;
+    line-height: $line-height-heading;
+    color: $pop-black;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: $pop-hot-pink;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    padding-bottom: $spacing-sm;
+    border-bottom: $border-width-thick solid $pop-electric-blue;
+    margin-top: $spacing-xxl;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      font-size: $h1-size;
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: $pop-electric-blue;
+    padding-left: $spacing-sm;
+    border-left: $border-width-thick solid $pop-hot-pink;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      font-size: $h2-size;
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    color: $pop-vivid-orange;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      font-size: $h3-size;
+    }
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    color: $pop-lime-green;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      font-size: $h4-size;
+    }
+  }
+
+  h5, h6 {
+    color: $pop-text-gray;
+  }
+
+  // Paragraphs and body text
+  p {
+    margin-bottom: $spacing-md;
+  }
+
+  // Strong emphasis with pop color
+  strong, b {
+    font-weight: $font-weight-bold;
+    color: $pop-hot-pink;
+  }
+
+  // Emphasis
+  em, i {
+    font-style: italic;
+    color: $pop-electric-blue;
+  }
+}
+
+// ============================================
+// LINKS - BOLD AND COLORFUL
+// ============================================
+
+.main-content {
+
+  a {
+    color: $pop-electric-blue;
+    text-decoration: none;
+    font-weight: $font-weight-medium;
+    border-bottom: 2px solid transparent;
+    transition: all $transition-medium;
+
+    &:hover {
+      color: $pop-hot-pink;
+      border-bottom-color: $pop-hot-pink;
+    }
+
+    &:focus {
+      outline: $focus-outline-width solid $focus-color;
+      outline-offset: $focus-outline-offset;
+      border-radius: 2px;
+    }
+  }
+}
+
+// ============================================
+// LISTS - ENHANCED STYLING
+// ============================================
+
+.main-content {
+
+  ul, ol {
+    margin-top: $spacing-md;
+    margin-bottom: $spacing-md;
+    padding-left: $spacing-lg;
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+      position: relative;
+      margin-bottom: $spacing-sm;
+
+      &::before {
+        content: '■';
+        color: $pop-hot-pink;
+        font-weight: bold;
+        position: absolute;
+        left: -$spacing-lg;
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  ol {
+    counter-reset: pop-counter;
+    list-style: none;
+
+    li {
+      position: relative;
+      margin-bottom: $spacing-sm;
+      counter-increment: pop-counter;
+
+      &::before {
+        content: counter(pop-counter);
+        color: $pop-off-white;
+        background: $pop-electric-blue;
+        font-weight: $font-weight-bold;
+        position: absolute;
+        left: -$spacing-lg;
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9em;
+        top: 0.1em;
+      }
+    }
+  }
+
+  // Nested lists
+  li > ul,
+  li > ol {
+    margin-top: $spacing-sm;
+  }
+}
+
+// ============================================
+// BLOCKQUOTES - POP ART STYLE
+// ============================================
+
+.main-content blockquote {
+  padding: $spacing-md $spacing-lg;
+  margin-left: 0;
+  margin-right: 0;
+  color: $pop-text-gray;
+  background: $pop-light-gray;
+  border-left: $border-width-thick solid $pop-bright-yellow;
+  font-style: italic;
+  position: relative;
+
+  &::before {
+    content: '"';
+    font-size: 4rem;
+    color: $pop-bright-yellow;
+    opacity: 0.3;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-family: Georgia, serif;
+    line-height: 1;
+  }
+
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+// ============================================
+// CODE - CLEAN AND READABLE
+// ============================================
+
+.main-content {
+
+  code {
+    padding: 2px 6px;
+    font-family: $font-stack-mono;
+    font-size: 0.9em;
+    color: $pop-dark-gray;
+    background-color: $pop-light-gray;
+    border: 1px solid $pop-medium-gray;
+    border-radius: $border-radius-sm;
+  }
+
+  pre {
+    padding: $spacing-md;
+    margin-top: $spacing-md;
+    margin-bottom: $spacing-md;
+    font: 1rem $font-stack-mono;
+    color: $pop-dark-gray;
+    background-color: $pop-light-gray;
+    border: $border-width-thin solid $pop-medium-gray;
+    border-radius: $border-radius-md;
+    overflow: auto;
+    line-height: 1.45;
+
+    > code {
+      padding: 0;
+      margin: 0;
+      font-size: 1em;
+      color: inherit;
+      background-color: transparent;
+      border: 0;
+    }
+  }
+}
+
+// ============================================
+// TABLES - STRUCTURED AND COLORFUL
+// ============================================
+
+.main-content table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  border-collapse: collapse;
+  margin-top: $spacing-md;
+  margin-bottom: $spacing-md;
+
+  th {
+    font-weight: $font-weight-bold;
+    background: $gradient-blue-pink;
+    color: $pop-off-white;
+    padding: $spacing-sm $spacing-md;
+    text-align: left;
+    border: $border-width-thin solid $pop-electric-blue;
+  }
+
+  td {
+    padding: $spacing-sm $spacing-md;
+    border: 1px solid $pop-medium-gray;
+  }
+
+  tr {
+    background-color: $pop-off-white;
+    border-top: 1px solid $pop-medium-gray;
+
+    &:nth-child(even) {
+      background-color: $pop-light-gray;
+    }
+
+    &:hover {
+      background-color: rgba($pop-bright-yellow, 0.1);
+    }
+  }
+}
+
+// ============================================
+// HORIZONTAL RULES - BOLD DIVIDERS
+// ============================================
+
+.main-content hr {
+  height: $border-width-medium;
+  padding: 0;
+  margin: $spacing-xl 0;
+  background: $gradient-pink-orange;
+  border: 0;
+}
+
+// ============================================
+// BUTTONS AND CALL-TO-ACTION ELEMENTS
+// ============================================
+
+.btn {
+  display: inline-block;
+  margin-bottom: $spacing-sm;
+  color: $pop-off-white;
+  background: $pop-hot-pink;
+  border: $button-border-width solid $pop-black;
+  border-radius: $border-radius-sm;
+  font-family: $font-stack-heading;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: $button-padding-vertical $button-padding-horizontal;
+  box-shadow: $shadow-pop;
+  transition: all $transition-medium;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+
+  &:hover {
+    background: $pop-electric-blue;
+    transform: translate(2px, 2px);
+    box-shadow: 4px 4px 0 $pop-black;
+  }
+
+  &:active {
+    transform: translate(4px, 4px);
+    box-shadow: 2px 2px 0 $pop-black;
+  }
+
+  &:focus {
+    outline: $focus-outline-width solid $focus-color;
+    outline-offset: $focus-outline-offset;
+  }
+
+  // Button variations
+  &.btn-secondary {
+    background: $pop-electric-blue;
+
+    &:hover {
+      background: $pop-vivid-orange;
+    }
+  }
+
+  &.btn-success {
+    background: $pop-lime-green;
+
+    &:hover {
+      background: $pop-bright-yellow;
+      color: $pop-black;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    padding: $button-padding-vertical * 1.2 $button-padding-horizontal * 1.5;
+    font-size: 1.1rem;
+  }
+}
+
+// ============================================
+// SPECIAL CONTENT BLOCKS
+// ============================================
+
+// Workshop demonstration sections
+.demo-section {
+  background: $pop-cream;
+  border: $border-width-medium solid $pop-electric-blue;
+  border-radius: $border-radius-md;
+  padding: $spacing-lg;
+  margin: $spacing-xl 0;
+  box-shadow: $shadow-subtle;
+
+  h2, h3 {
+    margin-top: 0;
+  }
+}
+
+// Key takeaways highlighting
+.main-content {
+  h3 + ul,
+  h4 + ul {
+    background: linear-gradient(to right, rgba($pop-bright-yellow, 0.1), transparent);
+    padding: $spacing-md;
+    border-radius: $border-radius-sm;
+  }
+}
+
+// ============================================
+// FOOTER
+// ============================================
+
+.site-footer {
+  padding: $spacing-xl $spacing-md;
+  margin-top: $spacing-xxl;
+  border-top: $border-width-medium solid $pop-hot-pink;
+  text-align: center;
+  background: $pop-light-gray;
+
+  .site-footer-owner {
+    font-weight: $font-weight-bold;
+    color: $pop-electric-blue;
+  }
+
+  .site-footer-credits {
+    color: $pop-text-gray;
+    font-size: $font-size-small;
+  }
+}
+
+// ============================================
+// RESPONSIVE IMAGES
+// ============================================
+
+.main-content img {
+  max-width: 100%;
+  height: auto;
+  border: $border-width-medium solid $pop-black;
+  box-shadow: $shadow-pop;
+  border-radius: $border-radius-sm;
+  margin: $spacing-md 0;
+
+  &:hover {
+    transform: scale(1.02);
+    transition: transform $transition-medium;
+  }
+}
+
+// ============================================
+// ACCESSIBILITY ENHANCEMENTS
+// ============================================
+
+// Focus visible for keyboard navigation
+:focus-visible {
+  outline: $focus-outline-width solid $focus-color;
+  outline-offset: $focus-outline-offset;
+}
+
+// Skip to content link
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: $pop-hot-pink;
+  color: $pop-off-white;
+  padding: $spacing-sm $spacing-md;
+  text-decoration: none;
+  font-weight: $font-weight-bold;
+  z-index: 100;
+
+  &:focus {
+    top: 0;
+  }
+}
+
+// Screen reader only content
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+// ============================================
+// PRINT STYLES
+// ============================================
+
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  .page-header {
+    background: none;
+    color: black;
+    border-bottom: 2px solid black;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: black !important;
+    border-color: black !important;
+    page-break-after: avoid;
+  }
+
+  img {
+    border: 1px solid black;
+    box-shadow: none;
+  }
+}
+
+// ============================================
+// UTILITY CLASSES
+// ============================================
+
+// Text alignment
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+// Spacing utilities
+.mt-0 { margin-top: 0; }
+.mb-0 { margin-bottom: 0; }
+.mt-sm { margin-top: $spacing-sm; }
+.mb-sm { margin-bottom: $spacing-sm; }
+.mt-md { margin-top: $spacing-md; }
+.mb-md { margin-bottom: $spacing-md; }
+.mt-lg { margin-top: $spacing-lg; }
+.mb-lg { margin-bottom: $spacing-lg; }
+
+// Pop art accent box
+.pop-box {
+  background: $gradient-yellow-orange;
+  color: $pop-black;
+  padding: $spacing-md;
+  border: $border-width-thick solid $pop-black;
+  box-shadow: $shadow-pop;
+  font-weight: $font-weight-bold;
+  margin: $spacing-md 0;
+}
