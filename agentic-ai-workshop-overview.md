@@ -1,368 +1,717 @@
 ---
 layout: default
-title: "Agentic AI for Humanities Research and Pedagogy"
+title: "Agentic AI: Understanding Subagents and Modern AI Tools"
 ---
 
-# Agentic AI for Humanities Research and Pedagogy: A Practical Workshop
+# Agentic AI: Understanding Subagents and Modern AI Tools
 
 **Duration:** 1 hour
-**Target Audience:** Humanities graduate students and faculty
-**Format:** Hands-on demonstrations with discussion
+**Target Audience:** Academics, researchers, faculty, and developers
+**Format:** Conceptual introduction with hands-on demonstrations
 
-## Workshop Overview
+## Talk Overview
 
-This workshop introduces agentic AI tools designed to support humanities research and teaching. Unlike conventional AI chatbots that require constant prompting, agentic AI systems operate with greater autonomy—they can plan multi-step tasks, use specialized tools, and work continuously toward defined goals. Through four practical demonstrations, participants will see how these tools integrate into existing academic workflows to handle data analysis, accessibility auditing, web development, and pedagogical tasks.
+This talk explores the emerging paradigm of agentic AI—autonomous systems that can plan, execute, and manage complex multi-step tasks with minimal supervision. Unlike conventional AI chatbots that require constant prompting, agentic AI systems leverage subagent architectures to decompose complex problems and execute sophisticated workflows. Through three focused segments, participants will understand what makes AI "agentic," see real-world applications in browser-based tools like Perplexity's Comet, and witness advanced development workflows using Claude Code for the web to build interactive applications.
 
 ## Learning Objectives
 
-By the end of this workshop, participants will be able to:
+By the end of this talk, participants will be able to:
 
-- Distinguish between conversational AI and agentic AI systems
-- Identify practical applications of agentic AI for humanities research workflows
-- Understand how AI tools can process humanities data and generate publication-ready outputs
-- Recognize opportunities to automate repetitive scholarly tasks while maintaining academic rigor
-- Evaluate accessibility features and considerations when using AI tools
-- Assess how custom AI agents can be configured for specific disciplinary needs
+- Define agentic AI and understand how it differs from conversational AI
+- Explain the concept of subagents and their role in complex task execution
+- Recognize practical applications of agentic AI in academic and development workflows
+- Understand how Perplexity's Comet browser integrates AI into web-based tasks
+- Appreciate the capabilities of Claude Code for rapid application development
+- Evaluate when agentic approaches offer advantages over traditional AI interactions
 
 ## Prerequisites and Setup
 
 **No prior coding experience required.** Participants should bring:
 
 - A laptop with internet access
-- Familiarity with basic academic workflows (word processing, LMS platforms, web browsing)
-- Curiosity about how AI might support their specific research or teaching context
+- Familiarity with basic web browsing and academic tools
+- Curiosity about AI systems and their capabilities
+- (Optional) Interest in web development or interactive media
 
-**Optional:** If you have specific datasets, course materials, or digital projects you would like to discuss during the workshop, consider bringing examples (ensuring appropriate permissions and privacy protections).
-
----
-
-## Demonstration 1: Extended Data Analysis with Claude
-
-**Duration:** 12 minutes
-
-### Concept
-
-This demonstration shows how AI can serve as a research assistant for qualitative and quantitative data analysis, transforming raw humanities datasets into polished, citation-ready documents.
-
-### The Workflow
-
-**Research Scenario:** Processing a humanities dataset—this might include interview transcripts, archival correspondence, survey responses, literary corpus data, or historical documents.
-
-**Steps Demonstrated:**
-
-1. **Upload and contextualize the dataset** in Claude's browser interface
-2. **Define the analytical task** (thematic coding, pattern identification, comparative analysis, etc.)
-3. **Guide the analysis** with discipline-specific prompts
-4. **Generate a formatted DOCX output** containing:
-   - Executive summary or analytical overview
-   - Relevant quotes from source materials
-   - Highlighted key findings
-   - Proper citations in a specified academic format (MLA, Chicago, APA)
-   - Structured sections suitable for incorporation into manuscripts or reports
-
-### Key Takeaways
-
-- **From raw data to publication-ready output:** Claude can process unstructured humanities data and produce formatted documents that conform to academic standards
-- **Citation integrity:** The tool maintains connections between claims and source materials, generating proper citations
-- **Iterative refinement:** Researchers can adjust analytical frames, request alternative interpretations, or refine outputs through conversation
-- **Time savings:** Tasks that might take hours of manual coding and formatting can be completed in minutes
-
-### Pedagogical and Research Applications
-
-- Analyzing student reflection essays or discussion board posts
-- Processing oral history transcripts
-- Conducting preliminary thematic analysis of archival materials
-- Synthesizing survey data from humanities research projects
-- Preparing literature reviews with proper citation formatting
-
-### Critical Considerations
-
-- AI analysis should complement, not replace, scholarly interpretation
-- Researchers must verify citations and interpretations
-- Understand the limitations: AI tools work with patterns in training data and may miss disciplinary nuance
-- Consider data privacy and intellectual property when uploading materials
+**Note:** Demonstrations will show advanced features, but all concepts will be explained from first principles.
 
 ---
 
-## Demonstration 2: Perplexity.AI's Comet as Browser Assistant
-
-**Duration:** 12 minutes
-
-### Concept
-
-Comet represents a shift toward persistent, context-aware AI that functions as an "always-on" research and teaching assistant integrated directly into your browser.
-
-### The Agentic Difference
-
-Unlike tools that require you to copy-paste content into a separate interface, Comet:
-
-- Maintains awareness of your current browser context
-- Can read and process web-based content continuously
-- Responds to queries about material you are actively viewing
-- Integrates seamlessly with web-based platforms you already use
-
-### Demonstration Focus: Canvas LMS Integration
-
-**Teaching Scenario:** Reviewing student assignments submitted through Canvas.
-
-**Capabilities Demonstrated:**
-
-1. **Reading assignments in context:** Comet can access and process student submissions directly within Canvas
-2. **Generating preliminary feedback:** Identify strengths, areas for development, and patterns across submissions
-3. **Rubric application:** Assist in applying grading criteria consistently
-4. **Comparative analysis:** Identify common misconceptions or successful approaches across a cohort
-5. **Drafting individualized comments:** Generate personalized feedback while maintaining instructor voice
-
-### Key Takeaways
-
-- **Contextual awareness:** The agent understands the environment it operates within (Canvas, web articles, digital archives)
-- **Workflow integration:** No need to download, transfer, or copy-paste materials
-- **Continuous availability:** The assistant remains active as you navigate between tasks
-- **Time reclamation:** Reduces mechanical aspects of grading while preserving pedagogical judgment
-
-### Pedagogical Applications Beyond Grading
-
-- Summarizing lengthy course readings for accessibility accommodations
-- Generating discussion questions from assigned materials
-- Checking syllabus clarity and completeness
-- Creating study guides or review materials
-- Monitoring online discussions for engagement patterns
-
-### Critical Considerations
-
-- Instructors retain final authority over all grading and feedback
-- Use AI-generated feedback as a draft, not a final product
-- Maintain transparency with students about AI use in course management
-- Consider equity implications: ensure AI assistance does not create biased feedback patterns
-- Protect student privacy: understand data handling practices of third-party tools
-
----
-
-## Demonstration 3: Claude Code for Image Processing and Web Development
+## Part 1: Understanding Agentic AI and Subagents
 
 **Duration:** 15 minutes
 
-### Concept
+### What is Agentic AI?
 
-Claude Code combines conversational AI with the ability to write, execute, and debug code. This demonstration shows how humanities scholars without programming backgrounds can leverage automation for digital project tasks.
+Traditional AI systems operate in a **reactive mode**: you provide a prompt, they generate a response, and the interaction ends. **Agentic AI** represents a paradigm shift toward **autonomous, goal-oriented systems** that can:
 
-### The Workflow
+#### Core Characteristics of Agentic AI
 
-**Project Scenario:** Creating an accessible image gallery for a digital humanities project—perhaps digitized archival photographs, manuscript pages, archaeological site images, or artwork reproductions.
+1. **Autonomous Planning**
+   - Break down complex goals into executable subtasks
+   - Determine the sequence and dependencies of operations
+   - Adapt plans based on intermediate results
 
-**Steps Demonstrated:**
+2. **Tool Use**
+   - Execute code and scripts
+   - Access external APIs and web resources
+   - Read and write files
+   - Interact with databases and systems
 
-1. **Batch image processing:** Upload a collection of images to Claude Code
-2. **Automated alt-text generation:**
-   - Claude analyzes each image
-   - Generates descriptive, context-appropriate alt text
-   - Follows accessibility best practices (concise, informative, relevant to scholarly context)
-3. **Building a web display:**
-   - Create HTML/CSS front-end to showcase the images
-   - Implement responsive design for multiple device types
-   - Include accessibility features (keyboard navigation, screen reader compatibility)
-4. **Sub-agent specialization:**
-   - Vision analysis sub-agent processes image content
-   - Web development sub-agent handles front-end code
-   - Accessibility sub-agent audits output for WCAG compliance
+3. **Persistent Context**
+   - Maintain awareness of project state across sessions
+   - Track progress toward long-term goals
+   - Remember previous decisions and their rationales
 
-### Key Takeaways
+4. **Self-Correction**
+   - Detect errors in outputs
+   - Iterate on solutions without human intervention
+   - Test and validate results automatically
 
-- **No coding required to start:** Natural language instructions guide technical implementation
-- **Accessibility as default:** Tools can build in best practices from the beginning
-- **Specialized sub-agents:** Complex tasks are distributed to agents with specific expertise
-- **Rapid prototyping:** Create functional web components quickly for digital projects
-- **Reproducibility:** Code can be saved, modified, and reused for future projects
+5. **Multi-Step Execution**
+   - Work continuously toward goals without constant prompting
+   - Handle workflows that span minutes or hours
+   - Manage complex dependencies between tasks
 
-### Research and Pedagogical Applications
+### What are Subagents?
 
-- Creating accessible digital exhibits or archives
-- Building interactive teaching materials with image collections
-- Processing large batches of visual materials for digital scholarship
-- Generating metadata for image databases
-- Prototyping digital humanities project interfaces before formal development
+**Subagents** are specialized AI agents that operate as part of a larger agentic system. Think of them as expert team members, each with specific capabilities:
 
-### Critical Considerations
+#### Subagent Architecture
 
-- Alt text quality depends on image clarity and AI interpretation accuracy
-- Review all generated descriptions for disciplinary accuracy and appropriate scholarly context
-- Understand that AI may miss cultural or historical nuances in visual materials
-- Generated code should be tested across browsers and assistive technologies
-- Consider long-term maintenance: who will update the code as standards evolve?
+```
+Main Orchestrating Agent
+│
+├── Vision Analysis Subagent
+│   └── Image recognition, alt-text generation, visual QA
+│
+├── Code Development Subagent
+│   └── Writing, debugging, and testing code
+│
+├── Web Interaction Subagent
+│   └── Browsing, scraping, form filling
+│
+├── Data Processing Subagent
+│   └── Analysis, transformation, validation
+│
+└── Accessibility Audit Subagent
+    └── WCAG compliance, testing, recommendations
+```
 
----
+#### Why Subagents Matter
 
-## Demonstration 4: Creating a Custom Accessibility Audit Agent
+- **Specialization:** Each subagent is optimized for specific tasks
+- **Parallelization:** Multiple subagents can work simultaneously
+- **Scalability:** Complex problems are decomposed into manageable units
+- **Quality:** Expert subagents produce better results than generalist approaches
+- **Modularity:** Subagents can be swapped, upgraded, or reconfigured
 
-**Duration:** 15 minutes
+#### Real-World Example
 
-### Concept
+**Task:** Build an accessible image gallery website
 
-This demonstration moves beyond using pre-configured tools to creating custom AI agents tailored to specific research needs. The example focuses on accessibility auditing, a crucial but often overlooked aspect of digital humanities work.
+**Without subagents:** A single AI struggles to balance competing concerns—visual design, code quality, accessibility, performance.
 
-### The Workflow
+**With subagents:**
+1. **Vision subagent** analyzes images and generates descriptive alt text
+2. **Development subagent** writes HTML/CSS/JavaScript
+3. **Accessibility subagent** audits for WCAG compliance
+4. **Performance subagent** optimizes loading and rendering
+5. **Main agent** orchestrates all activities and integrates outputs
 
-**Project Scenario:** Auditing an existing digital humanities project (website, digital edition, online exhibit, database interface) for accessibility compliance.
+Result: Higher quality, faster execution, better adherence to best practices.
 
-**Steps Demonstrated:**
+### From Theory to Practice
 
-1. **Configuring a new specialized agent:**
-   - Define the agent's purpose and scope
-   - Specify evaluation criteria (WCAG 2.1 guidelines, disciplinary best practices)
-   - Set output format (detailed reports, prioritized recommendations, code-level fixes)
+The remaining demonstrations will show agentic AI and subagent systems in action through two powerful tools:
 
-2. **Deploying the accessibility audit agent:**
-   - Point the agent to the digital project URL or codebase
-   - Initiate automated scanning and analysis
-   - Agent checks for:
-     - Image alt text presence and quality
-     - Heading hierarchy and semantic structure
-     - Color contrast ratios
-     - Keyboard navigation functionality
-     - Screen reader compatibility
-     - Form labels and error handling
-     - Media alternatives (captions, transcripts)
-
-3. **Interpreting the audit report:**
-   - Prioritized list of accessibility issues
-   - Severity ratings (critical, moderate, minor)
-   - Specific code locations requiring attention
-   - Recommended fixes with implementation examples
-   - Resources for understanding accessibility principles
-
-4. **Iterative improvement:**
-   - Implement recommended changes
-   - Re-run the audit to verify fixes
-   - Track progress toward full compliance
-
-### Key Takeaways
-
-- **Customization for disciplinary needs:** Agents can be configured to understand humanities-specific contexts
-- **Extensibility:** The same approach can create agents for other specialized tasks (metadata validation, citation checking, TEI encoding review)
-- **Proactive accessibility:** Integrate auditing into project development rather than retrofitting
-- **Documentation and learning:** Audit reports serve as educational resources for project teams
-- **Scalability:** Once configured, the agent can audit multiple projects with consistent standards
-
-### Research and Pedagogical Applications
-
-- Ensuring digital scholarship meets accessibility standards before publication
-- Teaching students about accessible design in digital humanities courses
-- Auditing institutional digital collections for compliance
-- Supporting grant requirements for accessible outputs
-- Creating equitable learning materials for diverse student populations
-
-### Extension Possibilities
-
-The custom agent approach demonstrated here can be adapted for:
-
-- **Metadata quality control:** Validating Dublin Core, MODS, or discipline-specific schemas
-- **TEI encoding review:** Checking XML structure and schema compliance for digital editions
-- **Citation verification:** Cross-referencing citations with source materials
-- **Data cleaning:** Identifying inconsistencies in humanities datasets
-- **Multilingual content checking:** Verifying language tagging and translation consistency
-
-### Critical Considerations
-
-- Automated audits identify technical issues but cannot evaluate conceptual accessibility (plain language, logical organization, user experience)
-- Accessibility is an ongoing process, not a one-time fix
-- Involve users with disabilities in testing and evaluation when possible
-- Balance automated checks with human judgment about scholarly context
-- Stay current with evolving accessibility standards and best practices
+1. **Perplexity Comet:** Agentic browser assistance for everyday academic tasks
+2. **Claude Code:** Advanced development environment leveraging subagent architectures
 
 ---
 
-## Synthesis: What Makes AI "Agentic"?
+## Part 2: Perplexity Comet Browser - Agentic AI for Web Workflows
 
-### Key Characteristics
+**Duration:** 20 minutes
 
-**Autonomy:** Agentic AI systems can work toward goals with minimal constant supervision. Once given a task, they determine necessary steps and execute them.
+### Concept
 
-**Tool Use:** These systems can employ specialized sub-agents, access external resources, write and execute code, and interact with web interfaces.
+Perplexity's **Comet browser** represents a new paradigm of AI-powered web interaction. Unlike browser extensions or separate AI tools, Comet integrates agentic AI directly into your browsing experience, providing contextual assistance for web-based tasks.
 
-**Multi-step Planning:** Rather than responding to single prompts, agentic AI can break complex tasks into sequences and adjust strategies based on intermediate results.
+### What Makes Comet "Agentic"?
 
-**Contextual Awareness:** They maintain understanding of working environment, prior conversation, and project goals across extended interactions.
+Traditional browser AI:
+- Requires you to copy/paste content
+- Works in isolation from web context
+- Cannot interact with pages on your behalf
+- Loses context when you switch tabs
 
-**Specialization:** Custom agents can be configured with domain-specific knowledge, evaluation criteria, and output formats.
+**Comet's agentic approach:**
+- **Context-aware:** Understands what page you're on and what you're doing
+- **Action-capable:** Can interact with web forms, buttons, and interfaces
+- **Persistent:** Maintains awareness across your browsing session
+- **Proactive:** Offers assistance based on your current task
 
-### Implications for Humanities Scholarship
+---
 
-Agentic AI represents a shift from AI as conversational partner to AI as collaborative research assistant capable of:
+### Demo 1: Downloading Websites as Markdown
 
-- Managing tedious but necessary scholarly tasks
-- Maintaining consistency across large-scale projects
-- Identifying patterns in complex datasets
-- Generating outputs that conform to disciplinary standards
-- Extending capabilities of small research teams
+**Use Case:** Archiving web content for research, creating offline documentation, or preserving sources.
+
+**The Challenge:** Websites contain complex HTML, CSS, JavaScript, ads, navigation menus, and other noise. Extracting clean, readable content is time-consuming.
+
+**Comet's Agentic Solution:**
+
+1. **Navigate to any web article or documentation page**
+2. **Invoke Comet** with a simple request: "Download this page as markdown"
+3. **Comet autonomously:**
+   - Analyzes page structure
+   - Identifies main content vs. navigation/ads
+   - Preserves headings, links, images, and formatting
+   - Converts to clean markdown format
+   - Downloads the file
+
+**Why This is Agentic:**
+- No manual HTML parsing required
+- Comet makes decisions about what content matters
+- Works across different site structures
+- Handles edge cases (dynamic content, complex layouts)
+
+**Applications:**
+- Building research archives
+- Creating offline reading collections
+- Preserving cited sources in durable formats
+- Converting documentation for academic notes
+
+---
+
+### Demo 2: Managing BibTeX Bibliographies
+
+**Use Case:** Maintaining citation databases for research papers and literature reviews.
+
+**The Challenge:** Manually creating BibTeX entries from web sources is tedious and error-prone. Each entry requires extracting author names, titles, publication info, URLs, and dates—then formatting according to BibTeX syntax.
+
+**Comet's Agentic Solution:**
+
+1. **Browse to an academic article, book page, or online source**
+2. **Ask Comet:** "Create a BibTeX entry for this source"
+3. **Comet autonomously:**
+   - Extracts bibliographic metadata (authors, title, journal, year, DOI)
+   - Determines the correct BibTeX entry type (@article, @book, @inproceedings, etc.)
+   - Formats the entry with proper syntax
+   - Generates a unique citation key
+   - Provides the complete entry for copying into your .bib file
+
+**Why This is Agentic:**
+- Understands different source types (journal articles, books, conference papers, websites)
+- Adapts extraction strategy to page structure
+- Validates and formats according to BibTeX standards
+- Handles missing fields gracefully
+
+**Applications:**
+- Building literature review databases
+- Maintaining citation files for manuscripts
+- Quick reference capture during research
+- Ensuring citation consistency
+
+---
+
+### Demo 3: Editing Course Dates and Modules in Canvas LMS
+
+**Use Case:** Faculty need to update course schedules, module release dates, and assignment deadlines when syllabi change.
+
+**The Challenge:** Canvas LMS requires clicking through multiple pages to update dates. Changing a course schedule across many modules and assignments is repetitive and time-consuming.
+
+**Comet's Agentic Solution:**
+
+1. **Navigate to your Canvas course**
+2. **Describe the change:** "Move all dates in Module 3 forward by one week"
+3. **Comet autonomously:**
+   - Analyzes current module structure and dates
+   - Calculates new dates based on your instruction
+   - Navigates through Canvas interface
+   - Updates module availability dates
+   - Adjusts assignment due dates
+   - Modifies quiz availability windows
+   - Confirms changes
+
+**Why This is Agentic:**
+- Navigates complex web interfaces independently
+- Performs multi-step workflows without supervision
+- Handles Canvas's specific UI patterns
+- Validates changes before committing
+- Can roll back if errors occur
+
+**Alternative Applications:**
+- Bulk updating assignment point values
+- Duplicating module structures across courses
+- Checking all assignments have rubrics
+- Ensuring consistent late policy application
+- Generating module completion requirements
+
+### Key Takeaways: Comet Browser
+
+- **Contextual intelligence:** Comet understands your current task and environment
+- **Web automation:** Performs complex interactions beyond simple form-filling
+- **Adaptive:** Works across different websites with different structures
+- **Time-saving:** Eliminates repetitive browser-based tasks
+- **Accessible:** Natural language instructions, no scripting required
+
+### Critical Considerations
+
+- **Privacy:** Understand what data Comet accesses and transmits
+- **Verification:** Always review automated changes, especially in LMS contexts
+- **Permissions:** Ensure you have authorization to modify systems
+- **Limitations:** Comet may struggle with complex authentication or dynamic interfaces
+- **Dependence:** Over-reliance on automation can reduce understanding of underlying systems
+
+---
+
+## Part 3: Claude Code for the Web - Building Interactive Applications with Subagents
+
+**Duration:** 25 minutes
+
+### Concept
+
+**Claude Code** is an advanced AI development environment that combines conversational AI with autonomous coding capabilities. Unlike code assistants that suggest snippets, Claude Code can plan, build, test, and deploy complete applications through natural language instructions.
+
+### What Makes Claude Code Agentic?
+
+Traditional coding assistants:
+- Suggest code completions line-by-line
+- Require you to understand and integrate suggestions
+- Cannot execute or test code independently
+- Lose context across files and sessions
+
+**Claude Code's agentic approach:**
+- **Full project awareness:** Understands your entire codebase structure
+- **Autonomous execution:** Writes, runs, debugs, and iterates on code without constant guidance
+- **Subagent architecture:** Deploys specialized subagents for different development tasks
+- **Multi-file coordination:** Manages dependencies across HTML, CSS, JavaScript, and assets
+- **Error handling:** Detects bugs, interprets error messages, and fixes issues automatically
+
+---
+
+### The Demo: Interactive Arcade Game About Agentic AI
+
+**Project Goal:** Build a complete interactive game that teaches players about agentic AI concepts through gameplay.
+
+**Technology Stack:**
+- **p5.js:** JavaScript library for creative coding and interactive graphics
+- **HTML/CSS:** Web structure and styling
+- **Vanilla JavaScript:** Game logic and interactivity
+
+**Game Concept:** "Agent Quest" - a puzzle arcade game where players control an AI agent navigating challenges. The player deploys specialized subagents to solve obstacles that require different capabilities (vision, logic, navigation, etc.).
+
+---
+
+### The Workflow: Subagents in Action
+
+#### Phase 1: Project Planning (Main Agent)
+
+**Natural language prompt:**
+```
+Build an interactive arcade game using p5.js about agentic AI.
+The game should teach players about subagents by having them
+deploy specialized AI assistants to solve different puzzles.
+Use --dangerously-skip-permissions to enable rapid development.
+```
+
+**Main agent's autonomous planning:**
+1. Analyze requirements
+2. Design game architecture
+3. Identify required subagents
+4. Create file structure
+5. Distribute tasks to specialized subagents
+
+#### Phase 2: Specialized Subagent Deployment
+
+**1. Game Design Subagent**
+- Creates game concept and mechanics
+- Designs level progression
+- Defines victory/failure conditions
+- Plans user interface elements
+
+**2. p5.js Development Subagent**
+- Sets up canvas and rendering loop
+- Implements game physics and collision detection
+- Creates player controls and movement
+- Handles animation and visual effects
+
+**3. UI/UX Subagent**
+- Designs intuitive controls
+- Creates HUD (heads-up display) for subagent status
+- Implements accessibility features (keyboard navigation, color contrast)
+- Adds tutorial overlays and instructions
+
+**4. Asset Creation Subagent**
+- Generates visual assets (sprites, backgrounds, UI elements)
+- Creates sound effects (or integrates audio libraries)
+- Optimizes media for web performance
+
+**5. Testing & Debugging Subagent**
+- Runs the game in browser
+- Identifies errors and edge cases
+- Tests collision detection accuracy
+- Validates game balance and difficulty
+
+**6. Documentation Subagent**
+- Writes inline code comments
+- Creates README with setup instructions
+- Documents game mechanics and controls
+- Generates developer notes
+
+#### Phase 3: Integration and Polish (Main Agent)
+
+The main orchestrating agent:
+- Synthesizes outputs from all subagents
+- Resolves conflicts between different implementations
+- Ensures consistent style and naming conventions
+- Performs final testing
+- Deploys to local server or hosting platform
+
+---
+
+### The --dangerously-skip-permissions Flag
+
+**What it does:**
+By default, AI development tools require explicit permission for potentially impactful actions:
+- Creating or deleting files
+- Running code
+- Installing dependencies
+- Modifying configurations
+
+The `--dangerously-skip-permissions` flag tells Claude Code: "I trust you to make decisions autonomously. Proceed without asking for confirmation."
+
+**Why use it?**
+- **Rapid prototyping:** Eliminates interruptions during creative flow
+- **Batch operations:** Allows bulk file operations without repeated approval
+- **Autonomous development:** Enables true "hands-off" AI development
+- **Educational demos:** Shows the full potential of agentic AI without friction
+
+**When to use it with caution:**
+- In production environments
+- When working with sensitive data
+- In shared codebases with version control
+- When you're unfamiliar with what the AI might do
+
+**For this demo:** Perfect for building a self-contained game where we want to see AI development at full speed.
+
+---
+
+### What You'll See During the Demo
+
+**Live coding demonstration showing:**
+
+1. **Initial prompt** - Single natural language instruction
+2. **Autonomous planning** - Agent outlines the project structure
+3. **File creation** - HTML, CSS, JavaScript files generated
+4. **p5.js setup** - Canvas initialization and game loop
+5. **Game mechanics implementation:**
+   - Player character with movement controls
+   - Enemy/obstacle behavior
+   - Subagent deployment system (player can "call in" specialized subagents)
+   - Puzzle elements requiring different subagent types
+6. **Visual design:**
+   - Color scheme and styling
+   - Animations and effects
+   - UI elements and HUD
+7. **Testing and iteration:**
+   - Agent plays its own game to test
+   - Identifies and fixes bugs
+   - Adjusts difficulty and balance
+8. **Final polish:**
+   - Instructions screen
+   - Victory/game over states
+   - Accessibility features
+
+**Timeline:** Watch a complete game go from concept to playable in under 20 minutes.
+
+---
+
+### Game Mechanics: Teaching Agentic AI Through Play
+
+**Core gameplay loop:**
+
+1. **Player enters a level** with various obstacles
+2. **Analyzes the challenge** - Some obstacles require vision (identifying objects), others require logic (solving puzzles), others require navigation (pathfinding)
+3. **Deploys appropriate subagent** - Player has limited subagent "energy" and must choose wisely
+4. **Subagent solves its specialized task** - Visual feedback shows the subagent at work
+5. **Level completion** - Player learns which types of tasks benefit from specialized agents
+
+**Educational value:**
+- **Learning by doing:** Players intuitively understand subagent specialization
+- **Resource management:** Limited subagent deployments teach strategic thinking
+- **Visual metaphor:** Seeing different colored subagents tackle different problems reinforces the concept
+- **Progressive complexity:** Later levels require coordinating multiple subagents
+
+---
+
+### Key Takeaways: Claude Code
+
+- **Natural language to full application:** Describe what you want, get a working product
+- **Subagent orchestration:** Watch specialized agents handle different aspects of development
+- **Rapid iteration:** Changes and refinements happen in seconds, not hours
+- **Accessible to non-programmers:** You don't need to know JavaScript or p5.js syntax
+- **Educational tool:** Perfect for teaching programming concepts or prototyping ideas
+- **Production-capable:** Not just demos—can build real, deployable applications
+
+### Beyond Game Development
+
+The same workflow applies to:
+- **Data visualizations** - Interactive charts and dashboards
+- **Educational simulations** - Physics, chemistry, or historical scenarios
+- **Digital art projects** - Generative art, interactive installations
+- **Web applications** - Forms, calculators, productivity tools
+- **Prototypes** - Test ideas before committing to full development
+
+### Subagent Architecture in Real-World Development
+
+This demo illustrates how professional development teams can leverage agentic AI:
+
+**Traditional development:**
+- Designer creates mockups → Developer implements → QA tests → Iterate
+- **Days or weeks** of back-and-forth
+
+**Agentic AI development:**
+- Natural language specification → Subagents handle all roles → Integrated output
+- **Minutes to hours** from concept to prototype
+
+**Hybrid approach (recommended):**
+- AI handles boilerplate, structure, and repetitive tasks
+- Humans focus on creative decisions, UX refinement, and strategic direction
+- Subagents provide specialized expertise (accessibility, performance, security)
+- Result: Faster development with higher quality
+
+---
+
+### Critical Considerations
+
+**Trust and verification:**
+- Always review generated code, especially with `--dangerously-skip-permissions`
+- Test thoroughly before deploying to production
+- Understand that AI can make mistakes or misunderstand requirements
+
+**Learning vs. dependence:**
+- Using Claude Code can teach programming concepts through observation
+- But over-reliance can prevent developing fundamental skills
+- Best used as a learning tool or for rapid prototyping, not as a replacement for understanding
+
+**Security implications:**
+- Generated code may contain vulnerabilities
+- `--dangerously-skip-permissions` bypasses safety checks
+- Never use with untrusted prompts or in sensitive environments
+- Audit code for security issues, especially user input handling
+
+**Intellectual property:**
+- Who owns AI-generated code?
+- Consider licensing and attribution
+- Check terms of service for AI tools
+
+**Creativity and authorship:**
+- AI implements your vision, but the vision must come from you
+- Original game design, mechanics, and educational goals are human contributions
+- AI is a tool, not a replacement for creative thinking
+
+---
+
+## Synthesis: The Agentic AI Revolution
+
+### Recap: Three Perspectives on Agentic AI
+
+**Part 1: Conceptual Foundation**
+- Agentic AI operates autonomously with planning, tool use, and self-correction
+- Subagents enable specialization, parallelization, and modular problem-solving
+- This architecture mirrors human team collaboration, but at AI speed
+
+**Part 2: Browser Integration (Perplexity Comet)**
+- Agentic AI embedded in everyday browsing
+- Context-aware assistance for repetitive web tasks
+- Demonstrates how agentic systems augment existing workflows without requiring new software
+
+**Part 3: Development Acceleration (Claude Code)**
+- Full-stack autonomous development from natural language
+- Subagent orchestration for complex application building
+- Shows the cutting edge: AI that plans, builds, tests, and deploys
+
+### Core Characteristics of Agentic AI
+
+**1. Autonomy**
+- Works toward goals with minimal supervision
+- Makes decisions about strategies and approaches
+- Executes multi-step workflows independently
+
+**2. Tool Use**
+- Can execute code, access APIs, browse the web, manipulate files
+- Deploys specialized subagents for expert capabilities
+- Integrates with existing systems and platforms
+
+**3. Planning and Reasoning**
+- Breaks complex goals into actionable subtasks
+- Adapts plans based on intermediate results
+- Handles dependencies and sequencing automatically
+
+**4. Contextual Awareness**
+- Maintains understanding across extended sessions
+- Tracks project state and progress
+- Remembers prior decisions and their rationales
+
+**5. Self-Correction**
+- Detects errors and bugs automatically
+- Iterates on solutions without human intervention
+- Tests and validates outputs
+
+**6. Specialization Through Subagents**
+- Each subagent brings domain expertise
+- Parallel processing accelerates complex tasks
+- Modular architecture enables flexible problem-solving
+
+### Implications Across Domains
+
+**For Academic Research:**
+- Automate literature reviews, bibliography management, and citation formatting
+- Process and analyze large datasets with minimal manual intervention
+- Build research tools and visualizations without programming expertise
+
+**For Teaching:**
+- Rapidly update course materials across learning management systems
+- Generate accessible content and study materials
+- Create interactive educational experiences
+
+**For Development:**
+- Prototype applications in minutes instead of weeks
+- Leverage specialized subagents for quality, accessibility, and performance
+- Lower barriers to entry for non-technical creators
+
+**For Daily Workflows:**
+- Eliminate repetitive browser-based tasks
+- Preserve and process web content for research
+- Integrate AI assistance into existing tools without friction
 
 ---
 
 ## Ethical and Practical Considerations
 
-### Transparency
+### Transparency and Disclosure
 
-- Disclose AI use in research outputs and pedagogical contexts
-- Document which tasks were AI-assisted and how outputs were verified
-- Consider disciplinary norms and journal policies regarding AI use
+- **In research:** Disclose when AI tools were used and for what purposes
+- **In teaching:** Be transparent with students about AI use in course management
+- **In development:** Document AI-generated code and its review process
+- **Best practice:** Treat AI as a collaborator worthy of acknowledgment
 
-### Verification
+### Verification and Quality Control
 
-- AI outputs require human review for accuracy, appropriateness, and scholarly rigor
-- Citations must be checked against original sources
-- Interpretive claims should align with disciplinary methods and evidence standards
+- **Always review outputs:** AI can make mistakes, misunderstand context, or generate plausible-sounding errors
+- **Test thoroughly:** Especially critical with `--dangerously-skip-permissions` workflows
+- **Validate sources:** Check that citations and references are accurate
+- **Human oversight:** Final decisions on quality, appropriateness, and correctness remain human responsibilities
 
 ### Privacy and Data Security
 
-- Understand data handling practices of AI platforms
-- Do not upload sensitive, proprietary, or personally identifiable information without appropriate protections
-- Consider institutional policies and IRB requirements when using AI with research data
+- **Understand data flow:** What information do AI tools collect and store?
+- **Protect sensitive information:** Don't upload confidential, proprietary, or personally identifiable data
+- **Institutional policies:** Comply with IRB requirements, FERPA (for student data), and organizational guidelines
+- **Terms of service:** Read and understand platform policies about data usage
 
 ### Equity and Access
 
-- AI tools often require paid subscriptions, creating access disparities
-- Consider how AI use might advantage some students or researchers over others
-- Advocate for institutional licenses or open-source alternatives where possible
+- **Subscription barriers:** Most advanced agentic AI tools require paid accounts
+- **Digital divide:** Not all students, faculty, or researchers have equal access
+- **Institutional support:** Advocate for site licenses and training programs
+- **Open alternatives:** Support development of open-source agentic tools
 
-### Intellectual Property
+### Intellectual Property and Authorship
 
-- Clarify ownership of AI-generated outputs
-- Understand terms of service for AI platforms regarding content usage
-- Consider implications for copyright, fair use, and attribution
+- **Code ownership:** Who owns AI-generated code? Check platform terms of service
+- **Creative credit:** AI implements your vision, but you design the requirements
+- **Licensing:** Understand implications for open-source licenses and attribution
+- **Academic integrity:** Follow institutional and disciplinary norms for AI use
 
-### Critical Engagement
+### Security Implications
 
-- AI tools reflect biases present in training data, which may not represent humanities scholarship adequately
-- Maintain critical perspective on AI limitations, especially with materials from marginalized communities or non-English languages
-- Use AI to augment, not replace, disciplinary expertise and human judgment
+- **Code vulnerabilities:** AI-generated code may contain security flaws
+- **Bypassing safeguards:** `--dangerously-skip-permissions` disables safety checks
+- **Audit requirements:** Review generated code for common vulnerabilities (SQL injection, XSS, etc.)
+- **Deployment considerations:** Test thoroughly before production release
+
+### Bias and Limitations
+
+- **Training data bias:** AI tools reflect patterns in their training data
+- **Domain gaps:** May lack expertise in specialized fields or non-Western contexts
+- **Language limitations:** Often optimized for English; may struggle with other languages
+- **Cultural nuance:** May miss context-dependent meanings or sensitive topics
+- **Critical lens:** Maintain awareness of what AI can and cannot do well
+
+### Dependence vs. Augmentation
+
+- **Learning opportunity:** Using agentic AI can teach concepts through observation
+- **Skill development:** Balance AI assistance with building fundamental knowledge
+- **Strategic use:** Let AI handle boilerplate, focus human attention on creative and critical tasks
+- **Avoiding over-reliance:** Understand underlying systems, don't treat AI as a black box
 
 ---
 
 ## Next Steps and Resources
 
-### Experimenting on Your Own
+### Getting Started with Agentic AI Tools
 
-- Start with low-stakes tasks: summarizing articles, generating discussion questions, formatting bibliographies
-- Gradually increase complexity as you develop familiarity with tool capabilities and limitations
-- Document your workflows to build institutional knowledge
+**Start Small:**
+- Begin with simple browser tasks (Comet: download web pages, create citations)
+- Try basic code generation (Claude Code: create a simple webpage or visualization)
+- Experiment with `--dangerously-skip-permissions` only in safe, isolated environments
 
-### Building Community Knowledge
+**Build Gradually:**
+- Increase complexity as you understand capabilities and limitations
+- Document what works well and what doesn't
+- Share successful workflows with colleagues
 
-- Share effective prompts and workflows with colleagues
-- Participate in discussions about disciplinary standards for AI use
-- Contribute to emerging best practices in your field
+**Stay Critical:**
+- Always review and verify AI outputs
+- Understand the tools' limitations in your domain
+- Balance efficiency gains with quality control
 
-### Staying Current
+### Tool Access
 
-- AI tools evolve rapidly; expect new capabilities and interfaces regularly
-- Follow digital humanities communities for discussions of AI applications
-- Attend workshops, webinars, and conference sessions on AI in humanities research
+**Perplexity Comet:**
+- Currently in beta/early access (check Perplexity.ai for availability)
+- May require Perplexity Pro subscription
+- Browser-based, works on desktop platforms
 
-### Resources for Further Learning
+**Claude Code:**
+- Available through Anthropic's Claude web interface
+- Requires Claude subscription (Pro or enterprise)
+- Web-based IDE with code execution capabilities
 
-- **Programming Historian:** Tutorials on digital methods for humanists
-- **WCAG Guidelines:** Web Content Accessibility Guidelines for inclusive digital projects
-- **Digital Humanities Quarterly:** Peer-reviewed scholarship on DH methods and theory
-- **Institutional support:** Consult your library, IT services, or digital scholarship center for guidance
+**Alternatives to explore:**
+- GitHub Copilot: AI pair programming
+- Cursor: AI-powered code editor
+- Replit AI: Browser-based development with AI assistance
+- Open-source options: Continue, Tabby, Code Llama
+
+### Learning Resources
+
+**Agentic AI Concepts:**
+- Research papers on autonomous agents and multi-agent systems
+- Anthropic's blog and research publications
+- Academic conferences: NeurIPS, ICML, ACL (for AI/ML theory)
+
+**Practical Tutorials:**
+- p5.js tutorials: creative coding basics
+- Web development fundamentals: HTML, CSS, JavaScript
+- BibTeX and citation management
+- Canvas LMS documentation and API guides
+
+**Community and Discussion:**
+- Digital humanities communities (DH Slack, Twitter/X, conferences)
+- AI ethics and policy discussions
+- Developer forums for specific tools
+
+### Institutional Resources
+
+- **Library support:** Many libraries offer digital scholarship consultations
+- **IT services:** May provide access to AI tools or training
+- **Teaching centers:** Can help integrate AI into pedagogy
+- **Research computing:** For computational needs beyond browser-based tools
 
 ---
 
@@ -370,30 +719,77 @@ Agentic AI represents a shift from AI as conversational partner to AI as collabo
 
 **For reflection or group conversation:**
 
-1. Which demonstration aligns most closely with your current research or teaching needs?
-2. What tasks in your workflow are repetitive enough to benefit from automation but complex enough to require intelligent assistance?
-3. What concerns do you have about integrating AI tools into your scholarly practice?
-4. How might agentic AI change the skills humanities graduate students need to develop?
-5. What safeguards should be in place when using AI for grading or student feedback?
-6. How can we ensure AI tools support rather than replace critical thinking in humanities pedagogy?
-7. What accessibility considerations are most relevant to your digital projects or course materials?
+1. **Understanding Agentic AI:**
+   - How is agentic AI different from the chatbots or AI assistants you've used before?
+   - What role do subagents play in making complex tasks more manageable?
+
+2. **Practical Applications:**
+   - Which of the demonstrated capabilities (Comet browser automation, Claude Code development) would be most useful in your work?
+   - What tasks in your current workflow could benefit from agentic automation?
+
+3. **Ethical Considerations:**
+   - What are the risks of using `--dangerously-skip-permissions` in real-world scenarios?
+   - How should we balance AI efficiency with verification and quality control?
+   - What does transparency look like when using agentic AI in research or teaching?
+
+4. **Learning and Skills:**
+   - Does using AI for development help you learn programming, or does it prevent skill development?
+   - What competencies do students and faculty need to use agentic AI effectively and responsibly?
+
+5. **Access and Equity:**
+   - How do subscription costs and tool access affect who can benefit from agentic AI?
+   - What can institutions do to ensure equitable access to these tools?
+
+6. **Future Implications:**
+   - How might widespread adoption of agentic AI change academic work?
+   - What safeguards should be in place as these systems become more autonomous?
+   - Where should human judgment remain central, even when AI could automate a task?
 
 ---
 
 ## Conclusion
 
-Agentic AI tools offer humanities scholars practical support for research and teaching tasks that are time-consuming, technically complex, or require specialized expertise. These demonstrations illustrate concrete applications: processing datasets, managing course materials, building accessible digital projects, and customizing agents for specific needs.
+Agentic AI represents a fundamental shift in how we interact with artificial intelligence—from reactive chatbots to autonomous systems capable of planning, executing, and managing complex workflows. Through subagent architectures, these systems achieve specialization and parallelization that enable sophisticated problem-solving across domains.
 
-The goal is not to replace humanistic inquiry with automation, but to reclaim time and energy for the interpretive, creative, and relational work that defines humanities scholarship. By understanding these tools' capabilities and limitations, scholars can make informed decisions about when and how to integrate AI into their practice.
+This talk explored three perspectives on agentic AI:
 
-As these technologies continue to evolve, the humanities community has an opportunity to shape their development and use in ways that align with our disciplinary values: rigor, accessibility, equity, and sustained critical engagement with complex cultural materials.
+1. **Conceptual foundation:** Understanding what makes AI "agentic" and how subagents enable complex task decomposition
+2. **Browser integration:** Perplexity Comet's demonstration of context-aware AI assistance for everyday web tasks
+3. **Development acceleration:** Claude Code's showcase of autonomous application building from natural language instructions
+
+### Key Takeaways
+
+**Autonomy and Intelligence:**
+Agentic AI systems operate with greater independence, making decisions, using tools, and iterating on solutions without constant human prompting.
+
+**Subagent Architecture:**
+Specialized subagents working in parallel enable higher quality outputs, faster execution, and more sophisticated problem-solving than single-agent approaches.
+
+**Practical Applications:**
+From automating repetitive browser tasks to building complete interactive applications, agentic AI is already transforming academic and creative workflows.
+
+**Responsible Use:**
+With increased autonomy comes increased responsibility. Verification, transparency, security, and critical engagement remain essential.
+
+### Looking Forward
+
+Agentic AI technology is evolving rapidly. Today's cutting-edge demonstrations will soon be baseline capabilities. The question is not whether agentic systems will become more prevalent, but how we'll integrate them thoughtfully into our work.
+
+**The opportunity:** Reclaim time from repetitive tasks to focus on creative, interpretive, and relational work that defines human expertise.
+
+**The challenge:** Maintain critical perspective, ensure equitable access, and prevent over-dependence on tools we don't fully understand.
+
+**The responsibility:** Shape the development and deployment of these systems in ways that align with our values—rigor, accessibility, equity, transparency, and sustained engagement with complexity.
+
+As scholars, educators, and creators, we have the chance to be thoughtful early adopters who help define best practices for agentic AI use in academic and creative contexts.
 
 ---
 
-**Workshop Facilitator Notes:**
+**Talk Facilitator Notes:**
 
-- Allocate 6 minutes after the four demonstrations for Q&A and discussion
-- Encourage participants to share their own use cases or concerns
-- Consider creating a shared document where participants can exchange prompts, workflows, and resources after the workshop
-- Follow up with resources, slides, or sample datasets used in demonstrations
-- Provide contact information for ongoing support or consultation
+- **Timing:** 15 min (intro/concepts) + 20 min (Comet demos) + 25 min (Claude Code demo) = 60 minutes total
+- **Q&A:** Build in time for questions throughout, or save 10 minutes at the end for discussion
+- **Engagement:** Encourage participants to share their own potential use cases
+- **Follow-up:** Provide links to tools, documentation, and this overview document
+- **Resources:** Consider creating a shared space for participants to exchange prompts and workflows
+- **Accessibility:** Ensure any live demos are described verbally for screen reader users; provide captioned versions if recorded
