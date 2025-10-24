@@ -688,6 +688,20 @@ This demo illustrates how professional development teams can leverage agentic AI
 - Replit AI: Browser-based development with AI assistance
 - Open-source options: Continue, Tabby, Code Llama
 
+### Featured Articles and Demonstrations
+
+**Claude Code and --dangerously-skip-permissions:**
+- **[Living Dangerously with Claude](https://simonwillison.net/2025/Oct/22/living-dangerously-with-claude/)** - Simon Willison's deep dive into using the `--dangerously-skip-permissions` flag in Claude Code, exploring when it's useful and what risks to consider
+- **[Claude Code for the Web](https://simonwillison.net/2025/Oct/20/claude-code-for-web/)** - Simon Willison's introduction to Claude Code's web-based IDE, demonstrating autonomous development capabilities and real-world use cases
+
+**Perplexity AI and Comet Browser:**
+- **[An Open Letter to Perplexity AI](https://marcwatkins.substack.com/p/an-open-letter-to-perplexity-ai)** - Marc Watkins' critical perspective on Perplexity AI's approach, providing important context for understanding the tool's strengths and limitations
+
+**Demo Resources and Examples:**
+- **[Google Share: Demo Resource 1](https://share.google/GO6Bg2iI726YwzQg4)** - Supplementary materials related to the talk demonstrations
+- **[Google Share: Demo Resource 2](https://share.google/nu8yGASNzNwsFeMsU)** - Additional examples and resources for agentic AI applications
+- **[Google Share: Demo Resource 3](https://share.google/4EixZKC4Vg3tjSd2b)** - Further documentation and reference materials
+
 ### Learning Resources
 
 **Agentic AI Concepts:**
