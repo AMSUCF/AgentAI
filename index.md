@@ -28,8 +28,13 @@ In this session, you'll discover:
 ### Get Started
 
 <div class="text-center mt-lg mb-lg">
+  <a href="game/index.html" class="btn" style="background: linear-gradient(135deg, #4caf50 0%, #8bc34a 100%);">🎮 Play Agent Quest Game</a>
   <a href="agentic-ai-workshop-overview.html" class="btn">View Full Talk Overview</a>
   <a href="process.html" class="btn btn-secondary">Session Documentation</a>
+</div>
+
+<div class="pop-box" style="background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); border-left: 5px solid #4caf50;">
+<strong>Try the Interactive Demo!</strong> Experience agentic AI firsthand by playing Agent Quest, an educational arcade game where you deploy specialized subagents to solve different types of obstacles. Learn through play!
 </div>
 
 ### Who Should Attend?

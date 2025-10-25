@@ -303,6 +303,14 @@ Traditional coding assistants:
 
 **Game Concept:** "Agent Quest" - a puzzle arcade game where players control an AI agent navigating challenges. The player deploys specialized subagents to solve obstacles that require different capabilities (vision, logic, navigation, etc.).
 
+<div style="background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); padding: 20px; border-radius: 10px; border-left: 5px solid #4caf50; margin: 20px 0;">
+<strong>🎮 Play the Live Demo!</strong> The game described in this tutorial has been fully implemented and is playable now:
+<br><br>
+<a href="../game/index.html" style="display: inline-block; padding: 12px 30px; background: linear-gradient(135deg, #4caf50 0%, #8bc34a 100%); color: white; text-decoration: none; border-radius: 25px; font-weight: bold; margin-top: 10px;">Launch Agent Quest →</a>
+<br><br>
+<em>Experience the subagent architecture in action as you deploy specialized AI agents to solve different types of obstacles!</em>
+</div>
+
 ---
 
 ### The Workflow: Subagents in Action
@@ -399,33 +407,73 @@ The `--dangerously-skip-permissions` flag tells Claude Code: "I trust you to mak
 
 ---
 
-### What You'll See During the Demo
+### The Implemented Game: Technical Specifications
 
-**Live coding demonstration showing:**
+**Agent Quest** has been fully implemented and is available to play. Here's what was built:
 
-1. **Initial prompt** - Single natural language instruction
-2. **Autonomous planning** - Agent outlines the project structure
-3. **File creation** - HTML, CSS, JavaScript files generated
-4. **p5.js setup** - Canvas initialization and game loop
-5. **Game mechanics implementation:**
-   - Player character with movement controls
-   - Enemy/obstacle behavior
-   - Subagent deployment system (player can "call in" specialized subagents)
-   - Puzzle elements requiring different subagent types
-6. **Visual design:**
-   - Color scheme and styling
-   - Animations and effects
-   - UI elements and HUD
-7. **Testing and iteration:**
-   - Agent plays its own game to test
-   - Identifies and fixes bugs
-   - Adjusts difficulty and balance
-8. **Final polish:**
-   - Instructions screen
-   - Victory/game over states
-   - Accessibility features
+#### Game Architecture
 
-**Timeline:** Watch a complete game go from concept to playable in under 20 minutes.
+1. **File Structure**
+   - `index.html` - Main structure with instructions screen
+   - `style.css` - Complete styling with gradients, animations, and responsive design
+   - `game.js` - Full game logic (~500 lines of code)
+   - `README.md` - Complete documentation
+
+2. **Core Systems Implemented:**
+   - **Player System:**
+     - Smooth movement with arrow keys/WASD
+     - Boundary collision detection
+     - Visual glow effects and direction indicators
+
+   - **Obstacle System:**
+     - 4 distinct types: Vision (blue), Logic (green), Navigation (yellow), Security (red)
+     - Health system (3 hits to destroy)
+     - Pulsing animations and color-coded visuals
+     - Smart placement algorithm to prevent overlap
+
+   - **Subagent System:**
+     - 4 specialized agents matching obstacle types
+     - Energy costs: Vision (15), Logic (20), Navigation (15), Security (25)
+     - Autonomous pathfinding to nearest matching obstacle
+     - Visual trail effects and targeting logic
+     - Penalty for wrong agent type (-5 energy)
+
+   - **Resource Management:**
+     - 100 starting energy
+     - Energy cost per subagent deployment
+     - +30 energy bonus per level completion
+     - Color-coded energy bar (green→yellow→red)
+
+3. **Visual Design:**
+   - Dark gradient background with grid pattern
+   - Glowing effects using canvas shadow properties
+   - Particle trail system for subagents
+   - Animated pulsing obstacles
+   - Responsive HUD with live stats
+   - Professional color scheme and typography
+
+4. **Game States:**
+   - **Instructions Screen:** Complete tutorial with subagent descriptions
+   - **Active Gameplay:** Full HUD, real-time stats, smooth animations
+   - **Victory Screen:** Reached after completing 5 levels with full statistics
+   - **Game Over Screen:** Triggered when energy depletes, shows progress stats
+
+5. **Progression System:**
+   - 5 levels with increasing difficulty
+   - More obstacles added per level (3 + level number)
+   - Score tracking (100 per obstacle + level bonuses)
+   - Statistics: score, level, obstacles cleared, energy remaining
+
+#### Educational Value Delivered
+
+The implemented game teaches through:
+- **Visual Learning:** Different colored agents for different task types
+- **Resource Constraints:** Strategic thinking about when to deploy agents
+- **Immediate Feedback:** Wrong agent types cost extra energy
+- **Progressive Mastery:** Levels get harder, requiring better strategy
+- **Autonomous Behavior:** Watch subagents pathfind and solve problems independently
+
+**Development Time:** Complete implementation from specification to working game: ~1 hour (demonstrating rapid prototyping with clear requirements)
 
 ---
 
