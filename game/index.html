@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Quest - Learn About Agentic AI Through Play</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="instructions" class="screen">
+            <h1>Agent Quest</h1>
+            <h2>Learn About Agentic AI Through Play</h2>
+            <div class="instructions-content">
+                <p>You are an AI agent navigating a world of challenges. Deploy specialized subagents to solve obstacles that require specific capabilities!</p>
+
+                <h3>How to Play:</h3>
+                <ul>
+                    <li><strong>Move:</strong> Arrow keys or WASD</li>
+                    <li><strong>Deploy Subagents:</strong> Number keys 1-4</li>
+                </ul>
+
+                <h3>Subagent Types:</h3>
+                <div class="subagent-types">
+                    <div class="subagent-info vision">
+                        <strong>1 - Vision Agent (Blue):</strong> Identifies and analyzes visual patterns
+                    </div>
+                    <div class="subagent-info logic">
+                        <strong>2 - Logic Agent (Green):</strong> Solves puzzles and logical challenges
+                    </div>
+                    <div class="subagent-info navigation">
+                        <strong>3 - Navigation Agent (Yellow):</strong> Finds optimal paths through mazes
+                    </div>
+                    <div class="subagent-info security">
+                        <strong>4 - Security Agent (Red):</strong> Bypasses security barriers
+                    </div>
+                </div>
+
+                <p class="tip">💡 Each subagent costs energy. Use them wisely! Match the right subagent to each obstacle type.</p>
+
+                <button onclick="startGame()" class="start-btn">Start Game</button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

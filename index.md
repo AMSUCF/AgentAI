@@ -1,82 +1,81 @@
 ---
 layout: default
-title: "AgentAI Talk - Home"
+title: "Agentic AI Workshop - Home"
 ---
 
-# Agentic AI: Transforming Academic Workflows with Intelligent Automation
+# Agentic AI: Autonomous Systems and Subagent Architectures
 
 ## Understanding Agentic AI and Subagents
 
-Welcome to this **hands-on talk** exploring how agentic artificial intelligence and subagent architectures are revolutionizing academic research, teaching, and digital project development.
+This workshop examines how agentic artificial intelligence and subagent architectures affect workflows in academic research, teaching, and digital project development.
 
-### What You'll Learn
+### Learning Objectives
 
-In this session, you'll discover:
+Participants in this session will examine:
 
-- **What agentic AI and subagents are** - Understanding autonomous AI systems that can plan, execute, and manage complex multi-step tasks
-- **How Perplexity's Comet browser** transforms web-based workflows with AI assistance
-- **How Claude Code for the web** enables rapid development of interactive digital projects using subagent architectures
+- **Agentic AI and subagent architectures** - Autonomous AI systems capable of planning, executing, and managing complex multi-step tasks
+- **Perplexity's Comet browser** - AI-assisted web-based workflows for research and teaching tasks
+- **Claude Code for web development** - Rapid prototyping of interactive digital projects using subagent architectures
 
-### Talk Features
+### Workshop Structure
 
-**Three Core Topics:**
+**Three Core Sections:**
 
-1. **Agentic AI & Subagents Explained** - Understand the architecture and capabilities of autonomous AI systems
-2. **Perplexity Comet Browser Demos** - See AI-powered browser assistance for markdown downloads, BibTeX management, and Canvas LMS editing
-3. **Claude Code for the Web** - Watch a full build of an interactive p5.js arcade game about agentic AI using subagents and --dangerously-skip-permissions
+1. **Agentic AI & Subagent Architectures** - Examining the structure and capabilities of autonomous AI systems
+2. **Perplexity Comet Browser Demonstrations** - Browser-based AI assistance for markdown downloads, BibTeX management, and Canvas LMS editing
+3. **Claude Code for Web Development** - Building an interactive p5.js application demonstrating agentic AI concepts using subagents and dangerously-skip-permissions mode
 
-### Get Started
+### Workshop Materials
 
 <div class="text-center mt-lg mb-lg">
-  <a href="agentic-ai-workshop-overview.html" class="btn">View Full Talk Overview</a>
-  <a href="process.html" class="btn btn-secondary">Session Documentation</a>
+  <a href="game/index.html" class="btn" style="background: linear-gradient(135deg, #4caf50 0%, #8bc34a 100%);">Agent Quest Interactive Demo</a>
+  <a href="agentic-ai-workshop-overview.html" class="btn">View Full Workshop Overview</a>
 </div>
 
-### Who Should Attend?
+<div class="pop-box" style="background: #f5f5f5; border-left: 5px solid #667eea; padding: 20px;">
+<strong>Interactive Demonstration Available:</strong> Agent Quest is an educational application that illustrates subagent deployment for different obstacle types. The game demonstrates how specialized agents with distinct capabilities can be coordinated to solve problems requiring multiple forms of expertise.
+</div>
 
-This talk is designed for:
+### Target Audience
 
-- Academics and researchers interested in AI-powered automation
-- Faculty exploring AI tools for course management and teaching
-- Digital humanities practitioners and developers
-- Anyone curious about how agentic AI systems work and can be applied to real-world tasks
-- Developers interested in rapid prototyping with AI assistance
+This workshop is designed for:
 
-**No coding experience required** - though some demos will show advanced features for those interested in development workflows.
+- Humanities faculty and graduate students
+- Researchers examining AI applications in academic contexts
+- Digital humanities practitioners
+- Developers interested in AI-assisted prototyping workflows
+
+Technical prerequisites: None. Demonstrations will include advanced development workflows that may be of particular interest to participants with programming experience.
 
 ---
 
 ### What is Agentic AI?
 
-Unlike conventional chatbots that require constant prompting, **agentic AI systems** operate with greater autonomy and intelligence. They can:
+Agentic AI systems differ from conversational AI interfaces in their capacity for autonomous operation. These systems can:
 
-- **Plan and execute** multi-step tasks independently without constant supervision
+- **Plan and execute** multi-step tasks with reduced supervision requirements
 - **Deploy specialized subagents** that handle specific aspects of complex work
 - **Maintain context** across extended interactions and project lifecycles
-- **Use tools dynamically** - from code execution to web browsing to file manipulation
+- **Use tools dynamically** including code execution, web browsing, and file manipulation
 - **Self-correct and iterate** based on intermediate results and feedback
 
-This represents a fundamental shift from AI as conversational partner to AI as an **autonomous collaborative assistant** capable of handling entire workflows.
+This development suggests a shift in AI interaction paradigms, from conversational interfaces to systems with greater operational autonomy.
 
 ---
 
 ### What are Subagents?
 
-**Subagents** are specialized AI agents that operate within a larger agentic system:
+Subagents are specialized AI agents that operate within a larger agentic system:
 
-- Each subagent has **specific expertise** (e.g., vision analysis, web development, accessibility auditing)
-- They work **in parallel** to handle different aspects of complex tasks
-- The main agent **orchestrates** subagent activities and synthesizes their outputs
-- This architecture enables **scalable, efficient problem-solving** beyond what a single agent can achieve
+- Each subagent has specific expertise (e.g., vision analysis, web development, accessibility auditing)
+- They work in parallel to handle different aspects of complex tasks
+- The main agent orchestrates subagent activities and synthesizes their outputs
+- This architecture enables problem decomposition and specialized task handling
 
 **Example:** When building a web gallery, vision subagents analyze images, development subagents write code, and accessibility subagents ensure compliance - all coordinated by a main orchestrating agent.
 
 ---
 
-<div class="pop-box text-center">
-Ready to see agentic AI and subagents in action?
-</div>
-
 <div class="text-center mt-md">
-  <a href="agentic-ai-workshop-overview.html" class="btn">Explore the Talk →</a>
+  <a href="agentic-ai-workshop-overview.html" class="btn">View Complete Workshop Overview</a>
 </div>
