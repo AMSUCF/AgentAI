@@ -1,18 +1,18 @@
 # AgentAI Workshop
 
-A one-hour workshop introducing agentic AI tools for humanities research and pedagogy.
+A demonstration-based workshop examining agentic AI systems and subagent architectures for academic contexts.
 
 ## About
 
-This workshop provides hands-on demonstrations of AI agents that can:
-- Process humanities datasets into publication-ready documents
-- Integrate seamlessly into existing academic workflows
-- Build accessible digital projects without coding
-- Audit and improve accessibility in digital scholarship
+This workshop demonstrates autonomous AI systems capable of:
+- Automating browser-based research and teaching tasks (markdown archiving, BibTeX management, LMS editing)
+- Rapid prototyping of interactive web applications
+- Coordinating specialized subagents for complex workflows
 
-**Target Audience:** Humanities graduate students and faculty
-**Format:** Practical demonstrations with critical discussion
-**Prerequisites:** None - no coding experience required
+**Target Audience:** Humanities faculty, graduate students, and digital scholarship practitioners
+**Format:** Three demonstration segments with conceptual introduction
+**Duration:** 1 hour
+**Prerequisites:** None. Advanced development demonstrations included for interested participants.
 
 ## Repository Structure
 
@@ -20,27 +20,29 @@ This workshop provides hands-on demonstrations of AI agents that can:
 AgentAI/
 ├── _config.yml                          # Jekyll configuration
 ├── _sass/                               # Custom theme styles
-│   ├── variables.scss                   # Pop art color palette & variables
+│   ├── variables.scss                   # Color palette & variables
 │   └── jekyll-theme-cayman.scss        # Main stylesheet override
 ├── assets/
 │   └── css/
 │       └── style.scss                   # Style integration
+├── game/                                # Agent Quest interactive demonstration
+│   ├── index.html
+│   ├── game.js
+│   ├── style.css
+│   └── README.md
 ├── index.md                             # Workshop homepage
 ├── agentic-ai-workshop-overview.md     # Complete workshop content
-├── process.md                           # Session documentation
 └── README.md                            # This file
 ```
 
-## Design Philosophy
+## Design
 
-The site features a **sixties pop art aesthetic** inspired by Roy Lichtenstein and Andy Warhol:
+The site uses a sixties pop art aesthetic with:
 
-- Bold, vibrant color palette (hot pinks, electric blues, bright yellows)
-- High-contrast typography for impact and readability
-- Graphic design elements balancing energy with professionalism
+- High-contrast color palette for improved readability
+- Typography optimized for screen display
 - Accessible color combinations meeting WCAG AA standards
-
-This visual approach makes academic content feel contemporary and engaging while maintaining scholarly credibility.
+- Responsive design for multiple device types
 
 ## Local Development
 
@@ -63,29 +65,24 @@ This site is configured for **GitHub Pages** deployment using:
 - Custom subtheme: Sixties pop art styling
 - Automatic deployment from the `main` branch
 
-## Key Features
+## Content Structure
 
-### Theme Customization
-- Custom color variables in `_sass/variables.scss`
-- Complete style override in `_sass/jekyll-theme-cayman.scss`
-- Responsive design for all device sizes
-- Accessibility-first approach
+### Workshop Sections
+1. **Conceptual Introduction:** Agentic AI characteristics and subagent architectures (15 min)
+2. **Perplexity Comet Demonstrations:** Browser-based AI workflows (20 min)
+3. **Claude Code Demonstration:** Interactive application development (25 min)
 
-### Content Structure
-- Workshop overview with four detailed demonstrations
-- Learning objectives and practical applications
-- Ethical considerations and critical perspectives
-- Discussion questions for engagement
+### Additional Materials
+- **Agent Quest:** Interactive demonstration of subagent coordination
+- Learning objectives and applications
+- Ethical considerations for academic contexts
+- Discussion questions
 
-### Visual Elements
-- Gradient header with subtle dot pattern overlay
-- Color-coded headings for visual hierarchy
-- Bold button styles with pop art shadows
-- Enhanced list styling and blockquotes
-
-## Contributing
-
-This workshop material is designed for educational use. Suggestions and improvements are welcome.
+### Technical Implementation
+- Jekyll static site generator
+- GitHub Pages deployment
+- Custom Sass styling with theme override
+- Responsive design meeting accessibility standards
 
 ## License
 
@@ -93,8 +90,8 @@ Workshop content and design by the Digital Humanities Initiative.
 
 ## Contact
 
-For questions about the workshop or materials, please reach out through the repository issues.
+For questions about workshop materials, use the repository issue tracker.
 
 ---
 
-**Built with Jekyll • Styled with Pop Art Energy • Designed for Humanities Scholars**
+Built with Jekyll. Designed for academic audiences.

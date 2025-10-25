@@ -6,12 +6,12 @@ title: "Agentic AI: Understanding Subagents and Modern AI Tools"
 # Agentic AI: Understanding Subagents and Modern AI Tools
 
 **Duration:** 1 hour
-**Target Audience:** Academics, researchers, faculty, and developers
-**Format:** Conceptual introduction with hands-on demonstrations
+**Target Audience:** Humanities faculty, graduate students, and digital scholarship practitioners
+**Format:** Demonstration-based workshop with conceptual introduction
 
-## Talk Overview
+## Workshop Overview
 
-This talk explores the emerging paradigm of agentic AI—autonomous systems that can plan, execute, and manage complex multi-step tasks with minimal supervision. Unlike conventional AI chatbots that require constant prompting, agentic AI systems leverage subagent architectures to decompose complex problems and execute sophisticated workflows. Through three focused segments, participants will understand what makes AI "agentic," see real-world applications in browser-based tools like Perplexity's Comet, and witness advanced development workflows using Claude Code for the web to build interactive applications.
+This workshop examines agentic AI—autonomous systems that can plan, execute, and manage complex multi-step tasks with reduced supervision requirements. Agentic AI systems use subagent architectures to decompose complex problems and execute multi-step workflows. Through three demonstration segments, participants will examine the characteristics of agentic systems, observe browser-based applications like Perplexity's Comet, and see development workflows using Claude Code for the web.
 
 ## Learning Objectives
 
@@ -301,14 +301,10 @@ Traditional coding assistants:
 - **HTML/CSS:** Web structure and styling
 - **Vanilla JavaScript:** Game logic and interactivity
 
-**Game Concept:** "Agent Quest" - a puzzle arcade game where players control an AI agent navigating challenges. The player deploys specialized subagents to solve obstacles that require different capabilities (vision, logic, navigation, etc.).
+**Game Concept:** "Agent Quest" - a puzzle arcade game where players control an AI agent navigating challenges. The player deploys specialized subagents to solve obstacles that require different capabilities (vision, logic, navigation, security).
 
-<div style="background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); padding: 20px; border-radius: 10px; border-left: 5px solid #4caf50; margin: 20px 0;">
-<strong>🎮 Play the Live Demo!</strong> The game described in this tutorial has been fully implemented and is playable now:
-<br><br>
-<a href="../game/index.html" style="display: inline-block; padding: 12px 30px; background: linear-gradient(135deg, #4caf50 0%, #8bc34a 100%); color: white; text-decoration: none; border-radius: 25px; font-weight: bold; margin-top: 10px;">Launch Agent Quest →</a>
-<br><br>
-<em>Experience the subagent architecture in action as you deploy specialized AI agents to solve different types of obstacles!</em>
+<div style="background: #f5f5f5; padding: 20px; border-radius: 8px; border-left: 5px solid #667eea; margin: 20px 0;">
+<strong>Interactive Demonstration:</strong> A working implementation of Agent Quest is available for examination at <a href="../game/index.html">game/index.html</a>. The application demonstrates subagent architecture through interactive obstacle-solving mechanics. Players deploy specialized agents with distinct capabilities to solve problems requiring multiple forms of expertise.
 </div>
 
 ---
@@ -391,19 +387,19 @@ By default, AI development tools require explicit permission for potentially imp
 
 The `--dangerously-skip-permissions` flag tells Claude Code: "I trust you to make decisions autonomously. Proceed without asking for confirmation."
 
-**Why use it?**
-- **Rapid prototyping:** Eliminates interruptions during creative flow
-- **Batch operations:** Allows bulk file operations without repeated approval
-- **Autonomous development:** Enables true "hands-off" AI development
-- **Educational demos:** Shows the full potential of agentic AI without friction
+**Use cases:**
+- Rapid prototyping in isolated development environments
+- Batch operations requiring multiple file operations
+- Educational demonstrations of autonomous development capabilities
+- Self-contained projects with controlled scope
 
-**When to use it with caution:**
-- In production environments
-- When working with sensitive data
-- In shared codebases with version control
-- When you're unfamiliar with what the AI might do
+**Cautions:**
+- Inappropriate for production environments
+- Should not be used with sensitive data
+- Not recommended for shared codebases with version control
+- Requires understanding of potential actions the system may take
 
-**For this demo:** Perfect for building a self-contained game where we want to see AI development at full speed.
+**For this demonstration:** Suitable for building a self-contained educational application in an isolated environment.
 
 ---
 
@@ -473,7 +469,7 @@ The implemented game teaches through:
 - **Progressive Mastery:** Levels get harder, requiring better strategy
 - **Autonomous Behavior:** Watch subagents pathfind and solve problems independently
 
-**Development Time:** Complete implementation from specification to working game: ~1 hour (demonstrating rapid prototyping with clear requirements)
+**Development Time:** Complete implementation from specification to working application: approximately 1 hour with clear requirements
 
 ---
 
@@ -563,24 +559,24 @@ This demo illustrates how professional development teams can leverage agentic AI
 
 ---
 
-## Synthesis: The Agentic AI Revolution
+## Synthesis: Agentic AI Characteristics and Applications
 
 ### Recap: Three Perspectives on Agentic AI
 
 **Part 1: Conceptual Foundation**
-- Agentic AI operates autonomously with planning, tool use, and self-correction
+- Agentic AI operates with greater autonomy through planning, tool use, and self-correction capabilities
 - Subagents enable specialization, parallelization, and modular problem-solving
-- This architecture mirrors human team collaboration, but at AI speed
+- This architecture shares structural similarities with collaborative team workflows
 
 **Part 2: Browser Integration (Perplexity Comet)**
-- Agentic AI embedded in everyday browsing
-- Context-aware assistance for repetitive web tasks
-- Demonstrates how agentic systems augment existing workflows without requiring new software
+- Agentic AI integrated into browser-based workflows
+- Context-aware assistance for research and teaching tasks
+- Demonstrates how agentic systems can augment existing academic workflows
 
-**Part 3: Development Acceleration (Claude Code)**
-- Full-stack autonomous development from natural language
-- Subagent orchestration for complex application building
-- Shows the cutting edge: AI that plans, builds, tests, and deploys
+**Part 3: Development (Claude Code)**
+- Autonomous development from natural language specifications
+- Subagent orchestration for application building
+- Demonstrates current capabilities: systems that plan, build, test, and deploy code
 
 ### Core Characteristics of Agentic AI
 
@@ -833,25 +829,25 @@ From automating repetitive browser tasks to building complete interactive applic
 **Responsible Use:**
 With increased autonomy comes increased responsibility. Verification, transparency, security, and critical engagement remain essential.
 
-### Looking Forward
+### Considerations for Academic Contexts
 
-Agentic AI technology is evolving rapidly. Today's cutting-edge demonstrations will soon be baseline capabilities. The question is not whether agentic systems will become more prevalent, but how we'll integrate them thoughtfully into our work.
+Agentic AI systems continue to develop rapidly, with expanding capabilities and broader availability. Integration of these tools into academic workflows raises several considerations:
 
-**The opportunity:** Reclaim time from repetitive tasks to focus on creative, interpretive, and relational work that defines human expertise.
+**Efficiency and labor:** These systems can handle repetitive technical tasks, potentially allowing more time for interpretive, creative, and relational aspects of scholarship and teaching.
 
-**The challenge:** Maintain critical perspective, ensure equitable access, and prevent over-dependence on tools we don't fully understand.
+**Critical engagement:** As these systems operate with greater autonomy, maintaining critical oversight becomes both more important and more challenging. Scholars must develop practices for verification and quality control appropriate to reduced-supervision systems.
 
-**The responsibility:** Shape the development and deployment of these systems in ways that align with our values—rigor, accessibility, equity, transparency, and sustained engagement with complexity.
+**Equity and access:** Most capable agentic AI systems currently require paid subscriptions, creating potential disparities in access. Institutional provision and open-source alternatives merit consideration.
 
-As scholars, educators, and creators, we have the chance to be thoughtful early adopters who help define best practices for agentic AI use in academic and creative contexts.
+**Methodological implications:** Use of AI systems in research and pedagogy affects replicability, attribution, and methodological transparency. Disciplinary standards for disclosure and documentation remain under development.
 
 ---
 
-**Talk Facilitator Notes:**
+**Facilitator Notes:**
 
-- **Timing:** 15 min (intro/concepts) + 20 min (Comet demos) + 25 min (Claude Code demo) = 60 minutes total
-- **Q&A:** Build in time for questions throughout, or save 10 minutes at the end for discussion
-- **Engagement:** Encourage participants to share their own potential use cases
+- **Timing:** 15 min (intro/concepts) + 20 min (Comet demonstrations) + 25 min (Claude Code demonstration) = 60 minutes total
+- **Q&A:** Allow time for questions throughout, or reserve 10 minutes at the end for discussion
+- **Engagement:** Encourage participants to identify potential applications in their own work
 - **Follow-up:** Provide links to tools, documentation, and this overview document
-- **Resources:** Consider creating a shared space for participants to exchange prompts and workflows
-- **Accessibility:** Ensure any live demos are described verbally for screen reader users; provide captioned versions if recorded
+- **Resources:** Consider establishing a shared space for participants to exchange workflows after the workshop
+- **Accessibility:** Describe live demonstrations verbally for screen reader users; provide captions if session is recorded

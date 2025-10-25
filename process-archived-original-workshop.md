@@ -1,11 +1,24 @@
 ---
 layout: default
-title: "Session Documentation"
+title: "Original Workshop Format - Archived"
 ---
 
-# AgentAI Workshop - Session Documentation
+# Original Workshop Format Documentation (Archived)
 
-**Project:** AgentAI - A workshop on agentic AI for humanities graduate students and faculty
+**⚠️ ARCHIVED:** This file documents the original four-demonstration workshop format developed in October 2025. The workshop has since been restructured into a three-part format.
+
+**Current Workshop Structure:**
+1. Agentic AI and subagent architectures (conceptual introduction)
+2. Perplexity Comet browser demonstrations
+3. Claude Code interactive development demonstration
+
+**For current workshop documentation, see:** [agentic-ai-workshop-overview.md](agentic-ai-workshop-overview.html)
+
+---
+
+## Original Development Session Information
+
+**Project:** AgentAI - Original workshop format (no longer current)
 **Working Directory:** C:\Users\anast\Documents\GitHub\AgentAI
 **Session Date:** 2025-10-06
 **Repository Status:** Clean (Branch: main, Initial commit: c01d1dc)
