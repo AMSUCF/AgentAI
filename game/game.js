@@ -36,6 +36,14 @@ const OBSTACLE_TYPES = {
 function startGame() {
     document.getElementById('instructions').classList.add('hidden');
     gameState = 'playing';
+
+    // Ensure canvas and HUD are created
+    if (!window.p5Instance) {
+        // p5 not ready yet, wait
+        setTimeout(startGame, 100);
+        return;
+    }
+
     initGame();
 }
 
@@ -55,41 +63,48 @@ function initGame() {
     // Reset game stats
     activeSubagents = [];
 
-    // Setup canvas if not already done
-    if (!document.querySelector('canvas')) {
-        createCanvas(CANVAS_WIDTH, CANVAS_HEIGHT);
-        const canvas = document.querySelector('canvas');
-        canvas.id = 'game-canvas';
-
-        // Create HUD
-        const hud = document.createElement('div');
-        hud.id = 'hud';
-        hud.innerHTML = `
-            <div class="hud-item">
-                <div class="hud-label">Level</div>
-                <div class="hud-value" id="level-display">${level}</div>
-            </div>
-            <div class="hud-item">
-                <div class="hud-label">Energy</div>
-                <div class="energy-bar">
-                    <div class="energy-fill" id="energy-fill"></div>
-                </div>
-            </div>
-            <div class="hud-item">
-                <div class="hud-label">Score</div>
-                <div class="hud-value" id="score-display">${score}</div>
-            </div>
-            <div class="hud-item">
-                <div class="hud-label">Obstacles</div>
-                <div class="hud-value" id="obstacles-display">${obstacles.length}</div>
-            </div>
-        `;
-
-        const container = document.getElementById('game-container');
-        container.insertBefore(hud, canvas);
+    // Create HUD if not already done
+    if (!document.getElementById('hud')) {
+        createHUD();
     }
 
     updateHUD();
+
+    // Start the game loop
+    loop();
+}
+
+function createHUD() {
+    const hud = document.createElement('div');
+    hud.id = 'hud';
+    hud.innerHTML = `
+        <div class="hud-item">
+            <div class="hud-label">Level</div>
+            <div class="hud-value" id="level-display">${level}</div>
+        </div>
+        <div class="hud-item">
+            <div class="hud-label">Energy</div>
+            <div class="energy-bar">
+                <div class="energy-fill" id="energy-fill"></div>
+            </div>
+        </div>
+        <div class="hud-item">
+            <div class="hud-label">Score</div>
+            <div class="hud-value" id="score-display">${score}</div>
+        </div>
+        <div class="hud-item">
+            <div class="hud-label">Obstacles</div>
+            <div class="hud-value" id="obstacles-display">${obstacles.length}</div>
+        </div>
+    `;
+
+    const container = document.getElementById('game-container');
+    const canvas = document.querySelector('canvas');
+    if (canvas) {
+        container.insertBefore(hud, canvas);
+    } else {
+        container.appendChild(hud);
+    }
 }
 
 function createObstacles() {
@@ -98,10 +113,10 @@ function createObstacles() {
     const obstacleCount = 3 + level; // More obstacles as levels progress
 
     for (let i = 0; i < obstacleCount; i++) {
-        const type = types[floor(random(types.length))];
+        const type = types[Math.floor(Math.random() * types.length)];
         const obstacle = {
-            x: random(300, CANVAS_WIDTH - 100),
-            y: random(100, CANVAS_HEIGHT - 100),
+            x: Math.random() * (CANVAS_WIDTH - 400) + 300,
+            y: Math.random() * (CANVAS_HEIGHT - 200) + 100,
             size: OBSTACLE_SIZE,
             type: type,
             health: 3,
@@ -111,7 +126,9 @@ function createObstacles() {
         // Make sure obstacles don't overlap too much
         let overlap = false;
         for (let other of obstacles) {
-            const d = dist(obstacle.x, obstacle.y, other.x, other.y);
+            const dx = obstacle.x - other.x;
+            const dy = obstacle.y - other.y;
+            const d = Math.sqrt(dx * dx + dy * dy);
             if (d < OBSTACLE_SIZE * 2) {
                 overlap = true;
                 break;
@@ -127,11 +144,23 @@ function createObstacles() {
 }
 
 function setup() {
-    // p5.js setup - canvas created in initGame
+    // p5.js setup - create canvas
+    const canvas = createCanvas(CANVAS_WIDTH, CANVAS_HEIGHT);
+    canvas.parent('game-container');
+    canvas.id('game-canvas');
+
+    // Mark that p5 is ready
+    window.p5Instance = true;
+
+    // Don't start the game loop yet
+    noLoop();
 }
 
 function draw() {
-    if (gameState !== 'playing') return;
+    if (gameState !== 'playing') {
+        noLoop();
+        return;
+    }
 
     // Background
     background(26, 26, 46);
@@ -396,11 +425,20 @@ function deploySubagent(type) {
 }
 
 function updateHUD() {
-    document.getElementById('level-display').textContent = level;
-    document.getElementById('score-display').textContent = score;
-    document.getElementById('obstacles-display').textContent = obstacles.length;
-
+    const levelDisplay = document.getElementById('level-display');
+    const scoreDisplay = document.getElementById('score-display');
+    const obstaclesDisplay = document.getElementById('obstacles-display');
     const energyFill = document.getElementById('energy-fill');
+
+    // Safety check - only update if elements exist
+    if (!levelDisplay || !scoreDisplay || !obstaclesDisplay || !energyFill) {
+        return;
+    }
+
+    levelDisplay.textContent = level;
+    scoreDisplay.textContent = score;
+    obstaclesDisplay.textContent = obstacles.length;
+
     energyFill.style.width = energy + '%';
 
     // Color code energy bar
